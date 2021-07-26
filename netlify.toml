@@ -1,0 +1,15 @@
+[dev]
+[build]
+  command = "yarn build"
+  publish = "dist"
+
+[context.production]
+  environment = { NODE_VERSION = "16" }
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/index"
+  status = 200
+
+[functions]
+  directory = "netlify/functions/server"
