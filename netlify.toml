@@ -1,6 +1,6 @@
 [dev]
 [build]
-  command = "yarn build"
+  command = "yarn build && rm dist/_redirects"
   publish = "dist"
 
 [context.production]
