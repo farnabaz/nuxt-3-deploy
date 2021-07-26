@@ -13,3 +13,4 @@
 
 [functions]
   directory = "netlify/functions/server"
+  node_bundler = "esbuild"
